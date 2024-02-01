@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/output.css">
+</head>
+<body class="tablet:grid tablet:grid-cols-2columns tablet:grid-rows-tabletRows hp:flex hp:flex-col min-h-[100vh] app-container">
+    <header class="bg-white items-center grid grid-cols-2 h-[86px] hp:my-10 tablet:my-0 z-20 px-[32px] tablet:px-[64px] w-full">
+        <div class="hp:col-span-4 flex tablet:hidden justify-between hp:mb-5">
+            <img src="../assets/logoWeb.svg" alt="skomdaInventaris">
+            <button class="flex justify-around flex-col min-w-[44px] min-h-[44px]">
+                <span class="w-full bg-black block h-[5px] rounded-sm"></span>
+                <span class="w-full bg-black block h-[5px] rounded-sm"></span>
+                <span class="w-full bg-black block h-[5px] rounded-sm"></span>
+            </button>
+        </div>
+        <div class="header__search flex bg-natural-8 rounded-md px-4 py-3 h-12 tablet:max-w-96 hp:col-start-1 hp:col-span-2">
+            <img src="../assets/searchIcon.svg" alt="Search">
+            <input 
+            type="text"
+            placeholder="Search"
+            class="outline-none bg-natural-8 rounded-md ml-3 w-full">
+        </div>
+        <div class="header__profile flex items-center col-start-3">
+            <a href="" class="hp:ml-3">
+                <img src="../assets/bell.svg" alt="">
+            </a>
+            <a href="" class="ml-[32px]">
+                <img src="../assets/userProfileDummy.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <aside class="bg-white h-full w-full z-10 col-start-1 row-start-1 row-span-3 p-7 shadow-sidebar hidden tablet:block">
+        <img src="../assets/logoWeb.svg" alt="skomdaInventaris">
+        <nav class="mt-12">
+            <h2>Home</h2>
+            <ul class="gap-3 flex flex-col mt-4">
+                <li>
+                    <a href="./Inventaris.html" class="p-3 flex  rounded-lg">
+                        <img src="../assets/boxIconDark.svg" class="text-black" alt="inventaris">
+                        <p class="ml-2 text-black">Inventaris</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="p-3 flex bg-red-600 rounded-lg">
+                        <img src="../assets/addIconLight.svg" alt="inventaris">
+                        <p class="ml-2 text-white">Pendaftaran Barang</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="bg-white px-[32px] tablet:px-[64px] hp:row-start-3 tablet:row-start-2 col-span-2">
+        <div class="w-full bg-mainbg h-[105px] rounded-[15px] mt-4 flex justify-between">
+            <div class="ml-8 pt-[24px]">
+                <h3 class="text-main font-semibold text-[20px]">Inventaris</h3>
+                    <a href="" class="text-natural-4">Home</a>
+                    <span>> Pendaftaran Barang</span>
+            </div>
+            <img src="../assets/piggy.svg" alt="piggy">
+        </div>
+        <div class="shadow-formBarang mt-6 rounded-[15px] mb-14">
+            <h3 class="border-b-natural-8 pt-4 relative border-b-[1px] px-6 pb-4 after:content-[''] after:w-[150px] after:h-[1px] after:absolute after:bottom-[-1px] after:left-0 after:bg-main">Form Barang</h3>
+            <form class="px-6 grid tablet:grid-cols-2 gap-x-[24px] gap-y-[16px] mt-8 hp:grid-cols-1">
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="kodeBarang">Kode Barang</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full" id="kodeBarang">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="jumlahBarang">Jumlah Barang</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="jumlahBarang">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="namaBarang">Nama Barang</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="namaBarang">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="PengadaanTahun">Pengadaan Tahun</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="PengadaanTahun">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="kategori">Kategori/Jenis Barang</label>
+                    <select class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full" name="kategori" id="kategori">
+                        <option value="kategori1">kategori1</option>
+                        <option value="kategori2">kategori2</option>
+                        <option value="kategori3">kategori3</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="hargaSatuan">Harga Satuan</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="hargaSatuan">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="deskripsi">Deskripsi</label>
+                    <textarea class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full" name="deskripsi" id="deskripsi" cols="20" rows="5"></textarea>
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px] " for="noKategori">No Kategori</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] mb-[10px] rounded-[10px] px-4 py-[11px] w-full " id="noKategori">
+                    <label class="block font-semibold mb-[12px]" for="spesifikasi">Spesifikasi</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="spesifikasi">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="kodeKategori">Kode Kategori</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="kodeKategori">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="kodeRuang">Kode Ruang</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="kodeRuang">
+                </div>
+                
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="asalPerolehan">Asal Perolehan</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="asalPerolehan">
+                </div>
+                
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="noRegister">No Register</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="noRegister">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="kategori">Gedung</label>
+                    <select name="gedung" id="gedung" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full ">
+                        <option value="gedungLama">Gedung Lama</option>
+                        <option value="gedungBaru">Gedung Baru</option>
+                    </select>
+                </div>
+                
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="keterangan">Keterangan</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="keterangan">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="kategori">Ruang</label>
+                    <select name="ruang" id="ruang" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full ">
+                        <option value="ruangKepsek">Ruang Kepsek</option>
+                        <option value="ruangSarpra">Ruang Sarpra</option>
+                    </select>
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="lokasiTerakhir">Lokasi Terakhir</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="lokasiTerakhir">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="noSeri">No Seri</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="noSeri">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="tanggal">Tanggal Pendaftaran Barang</label>
+                    <input type="date" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="tanggal">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="merek">Merek</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="merek">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="fotoBarang">Foto Barang</label>
+                    <input type="file" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="fotoBarang">
+                </div>
+                <div>
+                    <label class="block font-semibold mb-[12px]" for="tipe">Tipe</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="tipe">
+                </div>
+                <div class="row-start-12">
+                    <label class="block font-semibold mb-[12px]" for="warna">Warna</label>
+                    <input type="text" placeholder="Input Text" class="min-w-[44px] min-h-[44px] border-natural-6 border-[2px] rounded-[10px] px-4 py-[11px] w-full " id="warna">
+                </div>
+                <div class="flex items-center gap-x-2">
+                    <input class="bg-natural-7" type="checkbox" id="confirm">
+                    <label class="block text-natural-6" for="confirm">Apakah data sudah benar?</label>
+                </div>
+                <div class="relative tablet:row-start-13 tablet:col-start-2 hp:row-start-[30]">
+                    <button type="submit" class="absolute gap-x-2 flex bottom-5 right-6 px-6 py-3 bg-main rounded-[10px] text-white font-semibold">Submit Data <img src="../assets/arrow.svg" alt="submit"></button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>
