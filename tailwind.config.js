@@ -16,10 +16,10 @@ module.exports = {
         'formBarang': '0px 0px 55.7px 0px rgba(0, 0, 0, 0.07);',
       },
       screens: {
-        'hp': '375px',
+        'hp': '320px',
         'tablet': '768px',  
         'laptop': '1024px',  
-        'desktop': '1400',
+        'desktop': '1300px',
       },
       gridTemplateColumns: {
         '2columns': '280px 1fr',
