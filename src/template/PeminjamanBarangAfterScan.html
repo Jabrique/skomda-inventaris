@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/output.css">
+</head>
+<body class="tablet:grid tablet:grid-cols-2columns tablet:grid-rows-tabletRows hp:flex hp:flex-col min-h-[100vh] app-container">
+    <header class="bg-white items-center grid grid-cols-2 h-[86px] hp:my-10 tablet:my-0 z-20 px-[32px] tablet:px-[64px] w-full">
+        <div class="hp:col-span-4 flex tablet:hidden justify-between hp:mb-5">
+            <img src="../assets/logoWeb.svg" alt="skomdaInventaris">
+            <button class="flex justify-around flex-col min-w-[44px] min-h-[44px]">
+                <span class="w-full bg-black block h-[5px] rounded-sm"></span>
+                <span class="w-full bg-black block h-[5px] rounded-sm"></span>
+                <span class="w-full bg-black block h-[5px] rounded-sm"></span>
+            </button>
+        </div>
+        <div class="header__search flex bg-natural-8 rounded-md px-4 py-3 h-12 tablet:max-w-96 hp:col-start-1 hp:col-span-2">
+            <img src="../assets/searchIcon.svg" alt="Search">
+            <input 
+            type="text"
+            placeholder="Search"
+            class="outline-none bg-natural-8 rounded-md ml-3 w-full">
+        </div>
+        <div class="header__profile flex items-center col-start-3">
+            <a href="" class="hp:ml-3">
+                <img src="../assets/bell.svg" alt="">
+            </a>
+            <a href="" class="ml-[32px]">
+                <img src="../assets/userProfileDummy.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <aside class="bg-white h-full w-full z-10 col-start-1 row-start-1 row-span-3 p-7 shadow-sidebar hidden tablet:block">
+        <img src="../assets/logoWeb.svg" alt="skomdaInventaris">
+        <nav class="mt-12">
+            <h2 class="font-semibold">Peminjaman</h2>
+            <ul class="gap-3 flex flex-col mt-4">
+                <li>
+                    <a href="" class="p-3 flex bg-main rounded-lg">
+                        <img src="../assets/boxIcon.svg" class="text-white" alt="inventaris">
+                        <p class="ml-2 text-white">Peminjaman Barang</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="p-3 flex rounded-lg">
+                        <img src="../assets/boxIconDark.svg" alt="inventaris">
+                        <p class="ml-2 text-natural-4 font-semibold">Peminjaman Ruang</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="p-3 flex rounded-lg">
+                        <img src="../assets/boxIconDark.svg" alt="inventaris">
+                        <p class="ml-2 text-natural-4 font-semibold">Sewa Barang</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="p-3 flex rounded-lg">
+                        <img src="../assets/boxIconDark.svg" alt="inventaris">
+                        <p class="ml-2 text-natural-4 font-semibold">Sewa Ruang</p>
+                    </a>
+                </li>
+            </ul>
+            <h2 class="font-semibold mt-[2rem]">Peminjaman</h2>
+            <ul class="gap-3 flex flex-col mt-4">
+                <li>
+                    <a href="" class="p-3 flex rounded-lg">
+                        <img src="../assets/searchIcon.svg" class="text-white" alt="inventaris">
+                        <p class="ml-2 font-semibold text-natural-4">Cari Barang</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="bg-white px-[32px] tablet:px-[64px] hp:row-start-3 tablet:row-start-2 col-span-2 w-full">
+        <div class="w-full bg-mainbg h-[105px] rounded-[15px] mt-4 flex justify-between">
+            <div class="ml-8 pt-[24px]">
+                <h3 class="text-main font-semibold text-[20px]">Inventaris</h3>
+                    <a href="" class="text-natural-4">Home</a>
+                    <span>> Peminjaman Barang</span>
+            </div>
+            <img src="../assets/piggy.svg" alt="piggy" class="hp:w-[30%]">
+        </div>
+        <div class="container w-full desktop:flex justify-between hp:block hp:mx-auto">
+            <div class="desktop:w-[30%] hp:mx-auto hp:justify-center mt-6" style="margin-left: 0;">
+                <div class="desktop:h-[80vh] hp:h-[70vh] tablet:h-[70vh] bg-white shadow-lg rounded-xl p-4">
+                    <div class="bg-natural-7 rounded-xl">
+                        <img src="../assets/Barcode.png" alt="" width="200" class="mx-auto py-[2rem]">
+                    </div>
+                    <div class="mt-[30px] mx-auto w-fit">
+                        <a href="" class="bg-main px-8 py-3 hover:bg-main_hover text-white rounded-[10px]">Scan QR Code</a>
+                    </div>
+                    <div class="mt-[30px] mx-auto w-fit">
+                        <p class="text-natural-6 text-center">Scan barcode yang ada di barang pinjamanmu.</p>
+                    </div>
+                </div>
+                
+            </div>
+            <div class="shadow-formBarang desktop:mt-6 rounded-[15px] mb-[2rem] desktop:w-[65%] h-fit hp:w-full hp:mt-[7rem]">
+                <div class="flex">
+                    <h3 class="border-b-natural-8 pt-4 relative border-b-[1px] px-6 pb-4 after:content-[''] after:w-[120px] after:h-[1px] after:absolute after:bottom-[-1px] after:left-0 after:bg-main">Barang 1</h3>
+                    <h3 class="border-b-natural-8 pt-4 relative border-b-[1px] px-6 pb-4 after:content-[''] after:w-[120px] after:h-[1px] after:absolute after:bottom-[-1px] after:left-0  ms-[1rem]">Barang 2</h3>
+                </div>
+                <div class="container justify-between desktop:flex hp:block mt-[1rem]">
+                    <div class="container">
+                        <div class="ms-[1rem] desktop:mt-[1.5rem] hp:mt-[0.5rem]">
+                            <label class=" text-natural-1 font-medium text-sm">Kode Barang</label>
+                            <p class="text-natural-4 text-sm">A03KVM</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Nama Barang</label>
+                            <p class="text-natural-4 text-sm">Televisi</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Kategori/Jenis Barang</label>
+                            <p class="text-natural-4 text-sm">Elektronik</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Deskripsi Barang</label>
+                            <p class="text-natural-4 text-sm">Lorem ipsum dolor sit amet.</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Spesifikasi Barang</label>
+                            <p class="text-natural-4 text-sm">Lorem ipsum dolor sit amet.</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Gedung</label>
+                            <p class="text-natural-4 text-sm">Gedung A</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Ruang</label>
+                            <p class="text-natural-4 text-sm">Ruang 13</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Merk</label>
+                            <p class="text-natural-4 text-sm">Samsung</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Tipe</label>
+                            <p class="text-natural-4 text-sm">Smart TV</p>
+                        </div>
+                        
+                    </div>
+                    <div class="container">
+                        <div class="ms-[1rem] desktop:mt-[1.5rem] hp:mt-[0.5]">
+                            <label class=" text-natural-1 font-medium text-sm">Warna</label>
+                            <p class="text-natural-4 text-sm">Hitam</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Jumlah Barang</label>
+                            <p class="text-natural-4 text-sm">2</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Pengadaan Tahun</label>
+                            <p class="text-natural-4 text-sm">2023</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">No Kategori</label>
+                            <p class="text-natural-4 text-sm">129</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Kode Kategori</label>
+                            <p class="text-natural-4 text-sm">KSF10A</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Kode Ruang</label>
+                            <p class="text-natural-4 text-sm">PKLIG92</p>
+                        </div>  
+                    </div>
+                    <div class="container">
+                        <div class="ms-[1rem] desktop:mt-[1.5rem] hp:mt-[0.5rem]">
+                            <label class=" text-natural-1 font-medium text-sm">No Register</label>
+                            <p class="text-natural-4 text-sm">A03KVM</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Keterangan</label>
+                            <p class="text-natural-4 text-sm">Baik</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Lokasi Terakhir</label>
+                            <p class="text-natural-4 text-sm">Gedung A, Ruang 17</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Tanggal Pendaftaran</label>
+                            <p class="text-natural-4 text-sm">17 Juli 2023</p>
+                        </div>  
+                        <div class="ms-[1rem] mt-[0.5rem] text-sm">
+                            <label class=" text-natural-1 font-medium">Foto Barang</label>
+                            <p class="text-natural-4 text-sm">IMG.TV34.jpg</p>
+                        </div>
+                        
+                    </div>
+                </div>
+                <div class=" mt-[2rem] ms-auto w-fit me-[1rem] py-[1rem]">
+                    <button type="submit" class=" gap-x-2 flex bottom-5 right-6 px-6 py-2 bg-main rounded-[10px] text-white font-semibold hover:bg-main_hover">Konfirmasi</button>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
