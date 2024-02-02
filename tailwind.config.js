@@ -8,8 +8,12 @@ module.exports = {
         'natural-6': '#C2C2C2',
         'natural-7': '#E0E0E0',
         'natural-4': '#757575',
+        'natural-1' : '#0A0A0A',
+        'natural-5' : '#9E9E9E',
+        'natural-20' : '#F5F5F5',
         'mainbg' : '#FDEAEA',
-        'main': '#E4252C'
+        'main': '#E4252C',
+        'main_hover' : '#FF373F',
       },
       boxShadow: {
         'sidebar': '9px 4px 78px 0px rgba(0, 0, 0, 0.05);',
@@ -20,6 +24,7 @@ module.exports = {
         'tablet': '768px',  
         'laptop': '1024px',  
         'desktop': '1300px',
+        'desktop-lg': '1440px',
       },
       gridTemplateColumns: {
         '2columns': '280px 1fr',
