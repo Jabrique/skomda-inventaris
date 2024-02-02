@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../styles/output.css">
+</head>
+<body class="tablet:grid tablet:grid-cols-2columns tablet:grid-rows-tabletRows hp:flex hp:flex-col min-h-[100vh] app-container">
+    <header class="bg-white items-center grid grid-cols-2 h-[86px] hp:my-10 tablet:my-0 z-20 px-[32px] tablet:px-[64px] w-full">
+        <div class="hp:col-span-4 flex tablet:hidden justify-between hp:mb-5">
+            <img src="../assets/logoWeb.svg" alt="skomdaInventaris">
+            <button class="flex justify-around flex-col min-w-[44px] min-h-[44px]">
+                <span class="w-full bg-black block h-[5px] rounded-sm"></span>
+                <span class="w-full bg-black block h-[5px] rounded-sm"></span>
+                <span class="w-full bg-black block h-[5px] rounded-sm"></span>
+            </button>
+        </div>
+        <div class="header__search flex bg-natural-8 rounded-md px-4 py-3 h-12 tablet:max-w-96 hp:col-start-1 hp:col-span-2">
+            <img src="../assets/searchIcon.svg" alt="Search">
+            <input 
+            type="text"
+            placeholder="Search"
+            class="outline-none bg-natural-8 rounded-md ml-3 w-full">
+        </div>
+        <div class="header__profile flex items-center col-start-3">
+            <a href="" class="hp:ml-3">
+                <img src="../assets/bell.svg" alt="">
+            </a>
+            <a href="" class="ml-[32px]">
+                <img src="../assets/userProfileDummy.svg" alt="">
+            </a>
+        </div>
+    </header>
+    <aside class="bg-white h-full w-full z-10 col-start-1 row-start-1 row-span-3 p-6 shadow-sidebar hidden tablet:block">
+        <img src="../assets/logoWeb.svg" alt="skomdaInventaris">
+        <nav class="mt-12">
+            <h2>Home</h2>
+            <ul class="gap-3 flex flex-col mt-4">
+                <li>
+                    <a href="./Inventaris.html" class="p-3 flex  rounded-lg">
+                        <img src="../assets/boxIconDark.svg" class="text-black" alt="inventaris">
+                        <p class="ml-2 text-4 text-[14px] text-natural-4 font-semibold">Inventaris</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./PendaftaranBarang.html" class="p-3 flex rounded-lg">
+                        <img src="../assets/addIconDark.svg" alt="inventaris">
+                        <p class="ml-2 text-4 text-[14px] text-natural-4 font-semibold">Pendaftaran Barang</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="" class="p-3 flex rounded-lg">
+                        <img src="../assets/historyIcon.svg" alt="inventaris">
+                        <p class="ml-2 text-4 text-[14px] text-natural-4 font-semibold">Histori Peminjaman Barang</p>
+                    </a>
+                </li>
+                <li>
+                    <a href="./verifikasiPeminjaman.html" class="p-3 flex bg-red-600 rounded-lg">
+                        <img src="../assets/verifIcon.svg" alt="inventaris">
+                        <p class="ml-2 text-white font-semibold">verifikasi Peminjaman</p>
+                    </a>
+                </li>
+            </ul>
+        </nav>
+    </aside>
+    <main class="bg-white px-[32px] tablet:px-[64px] hp:row-start-3 tablet:row-start-2 col-span-2">
+        <div class="w-full bg-mainbg h-[105px] rounded-[15px] mt-4 flex justify-between">
+            <div class="ml-8 pt-[24px]">
+                <h3 class="text-main font-semibold desktop:text-[20px] tablet:text-[16px]">Verifikasi Peminjaman</h3>
+                <a href="" class="text-natural-4 desktop:text-[20px] tablet:text-[14px] hp:text-[13px]">Home</a>
+                <span class="desktop:text-[20px] hp:text-[13px] tablet:text-[14px]">> Verifikasi Peminjaman</span>
+            </div>
+            <img src="../assets/piggy.svg" alt="piggy">
+        </div>
+        <div class="shadow-formBarang mt-6 rounded-[15px] mb-14 pb-28 relative">
+            <div class="flex border-b-natural-8 border-b-[1px]">
+                <button class="border-b-natural-8 pt-4 relative border-b-[1px] px-6 pb-4 after:content-[''] after:w-[150px] after:h-[1px] after:absolute after:bottom-[-1px] after:left-0 after:bg-main">Detail Barang</button>
+                <button class="pt-4 relative px-6 pb-4 after:content-[''] after:w-[150px] after:h-[1px] after:absolute after:bottom-0 after:left-0 hover:after:bg-main after:transition after:duration-300" href="">Detail Peminjam</button>
+            </div>
+            <div class="flex pt-10 desktop:gap-x-24 tablet:pl-16 hp:pl-8 flex-wrap">
+                <table cellspacing="0" cellpadding="5">
+                    <tr>
+                        <td class="font-semibold align-top">Kode Barang</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">A03KVM</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Nama Barang</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">Televisi</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Kategori/Jenis Barang</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">Televisi</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Deskripsi Barang</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">Lorem Ipsum dolor sit amet</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Spesifikasi</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Gedung</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">Gedung A</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Ruang</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">Ruang 1</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Merek</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">LG</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Tipe</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Warna</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">Hitam</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Jumlah Barang</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">4</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Pengadaan Tahun</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">2024</td>
+                    </tr>
+                </table>
+                <table cellspacing="0" cellpadding="5">
+                    <tr>
+                        <td class="font-semibold align-top">No Kategori</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">123456</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Kode Kategori</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">AK294MV</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Kode Ruang</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">ASDM0A2</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">No Register</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">ALSC02</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Keterangan</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">Lorem Ipsum</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Lokasi Terakhir</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">Ruang 13, Gedung A</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Tanggal Pendaftaran</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">07/17/2023</td>
+                    </tr>
+                    <tr>
+                        <td class="font-semibold align-top">Foto Barang</td>
+                        <td class="align-top">:</td>
+                        <td class="text-natural-4 align-top">IMG.TV.2023.jpg</td>
+                    </tr>
+                </table>
+            </div>
+
+            <button class="flex absolute bottom-5 right-5 bg-natural-8 rounded-[10px] px-5 text-natural-6 min-w-[44px] min-h-[44px] py-3" type="button">
+                <span class="mr-2">Konfirmasi</span>
+                <img src="../assets/checkIcon.svg" alt="confirm">
+            </button>
+        </div>
+    </main>
+</body>
+</html>

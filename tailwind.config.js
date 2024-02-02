@@ -20,10 +20,10 @@ module.exports = {
         'formBarang': '0px 0px 55.7px 0px rgba(0, 0, 0, 0.07);',
       },
       screens: {
-        'hp': '319px',
+        'hp': '320px',
         'tablet': '768px',  
         'laptop': '1024px',  
-        'desktop': '1280px',
+        'desktop': '1300px',
         'desktop-lg': '1440px',
       },
       gridTemplateColumns: {
