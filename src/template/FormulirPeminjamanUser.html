@@ -6,17 +6,17 @@
     <title>Document</title>
     <link rel="stylesheet" href="../styles/output.css">
 </head>
-<body class="tablet:grid tablet:grid-cols-2columns tablet:grid-rows-tabletRows hp:flex hp:flex-col min-h-[100vh] app-container">
-    <header class="bg-white items-center grid grid-cols-2 h-[86px] hp:my-10 tablet:my-0 z-20 px-[32px] tablet:px-[64px] w-full">
-        <div class="hp:col-span-4 flex tablet:hidden justify-between hp:mb-5">
+<body class="laptop:grid tablet:grid-cols-2columns tablet:grid-rows-tabletRows hp:flex hp:flex-col min-h-[100vh] app-container">
+    <header class="bg-white items-center grid grid-cols-2 h-[86px] hp:my-10 laptop:my-0 z-20 px-[32px] laptop:px-[64px] w-full">
+        <div class="hp:col-span-4 flex laptop:hidden justify-between hp:mb-5">
             <img src="../assets/logoWeb.svg" alt="skomdaInventaris">
-            <button class="flex justify-around flex-col min-w-[44px] min-h-[44px]">
-                <span class="w-full bg-black block h-[5px] rounded-sm"></span>
-                <span class="w-full bg-black block h-[5px] rounded-sm"></span>
-                <span class="w-full bg-black block h-[5px] rounded-sm"></span>
+            <button class="flex justify-around flex-col hp:min-w-[30px] hp:min-h-[24px] tablet:min-w-[44px] tablet:min-h-[44px]">
+                <span class="w-full bg-black block h-[3px] rounded-sm"></span>
+                <span class="w-full bg-black block h-[3px] rounded-sm"></span>
+                <span class="w-full bg-black block h-[3px] rounded-sm"></span>
             </button>
         </div>
-        <div class="header__search flex bg-natural-8 rounded-md px-4 py-3 h-12 tablet:max-w-96 hp:col-start-1 hp:col-span-2">
+        <div class="header__search flex bg-natural-8 rounded-md px-4 py-3 h-12 laptop:max-w-96 hp:col-start-1 hp:col-span-2">
             <img src="../assets/searchIcon.svg" alt="Search">
             <input 
             type="text"
@@ -32,21 +32,21 @@
             </a>
         </div>
     </header>
-    <aside class="bg-white h-full w-full z-10 col-start-1 row-start-1 row-span-3 p-7 shadow-sidebar hidden tablet:block">
+    <aside class="bg-white h-full w-full z-10 col-start-1 row-start-1 row-span-3 p-7 shadow-sidebar hidden tablet:hidden laptop:block ">
         <img src="../assets/logoWeb.svg" alt="skomdaInventaris">
         <nav class="mt-12">
             <h2 class="font-semibold">Peminjaman</h2>
             <ul class="gap-3 flex flex-col mt-4">
                 <li>
-                    <a href="" class="p-3 flex bg-main rounded-lg">
-                        <img src="../assets/boxIcon.svg" class="text-white" alt="inventaris">
-                        <p class="ml-2 text-white">Peminjaman Barang</p>
+                    <a href="PeminjamanBarangBeforeScan.html" class="p-3 flex rounded-lg">
+                        <img src="../assets/boxIconDark.svg" class="text-white" alt="inventaris">
+                        <p class="ml-2 text-natural-4 font-semibold">Peminjaman Barang</p>
                     </a>
                 </li>
                 <li>
-                    <a href="" class="p-3 flex rounded-lg">
-                        <img src="../assets/boxIconDark.svg" alt="inventaris">
-                        <p class="ml-2 text-natural-4 font-semibold">Peminjaman Ruang</p>
+                    <a href="" class="p-3 flex bg-main rounded-lg">
+                        <img src="../assets/boxIcon.svg" alt="inventaris">
+                        <p class="ml-2 text-white font-semibold">Peminjaman Ruang</p>
                     </a>
                 </li>
                 <li>
@@ -65,7 +65,7 @@
             <h2 class="font-semibold mt-[2rem]">Peminjaman</h2>
             <ul class="gap-3 flex flex-col mt-4">
                 <li>
-                    <a href="" class="p-3 flex rounded-lg">
+                    <a href="CariBarangUser.html" class="p-3 flex  rounded-lg">
                         <img src="../assets/searchIcon.svg" class="text-white" alt="inventaris">
                         <p class="ml-2 font-semibold text-natural-4">Cari Barang</p>
                     </a>
@@ -73,7 +73,7 @@
             </ul>
         </nav>
     </aside>
-    <main class="bg-white px-[32px] tablet:px-[64px] hp:row-start-3 tablet:row-start-2 col-span-2">
+    <main class="bg-white px-[32px] laptop:px-[64px] hp:row-start-3 tablet:row-start-2 col-span-2">
         <div class="w-full bg-mainbg h-[105px] rounded-[15px] mt-4 flex justify-between">
             <div class="ml-8 pt-[24px]">
                 <h3 class="text-main font-semibold text-[20px]">Inventaris</h3>

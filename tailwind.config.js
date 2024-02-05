@@ -11,6 +11,8 @@ module.exports = {
         'natural-1' : '#0A0A0A',
         'natural-5' : '#9E9E9E',
         'natural-20' : '#F5F5F5',
+        'success' : '#21725E',
+        'successbg' : '#E7FAF5',
         'mainbg' : '#FDEAEA',
         'main': '#E4252C',
         'main_hover' : '#FF373F',
